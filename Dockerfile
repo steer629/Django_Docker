@@ -7,9 +7,15 @@ ENV PATH /usr/local/bin:$PATH
 # > At the moment, setting "LANG=C" on a Linux system *fundamentally breaks Python 3*, and that's not OK.
 ENV LANG C.UTF-8
 
-sudo apt-get update
-sudo apt install software-properties-common
-sudo add-apt-repository ppa:deadsnakes/ppa -y
-sudo apt install python3.7
+RUN sudo apt-get update
+RUN sudo apt install software-properties-common
+RUN sudo add-apt-repository ppa:deadsnakes/ppa -y
+RUN sudo apt install python3.7 gunicorn
+
+
+# Install our requirements.
+RUN pip install -U pip
+RUN pip install -Ur requirement.txt
+
 
 
