@@ -1,0 +1,11 @@
+Django
+psycopg2
+dash
+dash-bootstrap-components
+sqlalchemy
+pandas
+datetime
+flask-caching
+django_plotly_dash
+gunicorn
+redis
