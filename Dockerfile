@@ -8,14 +8,14 @@ ENV PATH /usr/local/bin:$PATH
 ENV LANG C.UTF-8
 
 RUN apt-get update \
-    apt-get install software-properties-common \
-    add-apt-repository ppa:deadsnakes/ppa -y \
-    apt-get install python3.7 gunicorn
+    && apt-get install software-properties-common \
+    && add-apt-repository ppa:deadsnakes/ppa -y \
+    && apt-get install python3.7 gunicorn
 
 
 # Install our requirements.
 RUN pip install -U pip \
-    pip install -Ur requirement.txt
+    && pip install -Ur requirement.txt
 
 
 
