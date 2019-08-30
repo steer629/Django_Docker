@@ -8,9 +8,9 @@ ENV PATH /usr/local/bin:$PATH
 ENV LANG C.UTF-8
 
 RUN apt-get update \
-    && apt-get install software-properties-common \
+    && apt-get install software-properties-common -y\
     && add-apt-repository ppa:deadsnakes/ppa -y \
-    && apt-get install python3.7 gunicorn
+    && apt-get install python3.7 gunicorn -y
 
 
 # Install our requirements.
