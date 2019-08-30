@@ -10,7 +10,7 @@ ENV LANG C.UTF-8
 RUN apt-get update \
     && apt-get install software-properties-common -y\
     && add-apt-repository ppa:deadsnakes/ppa -y \
-    && apt-get install python3.7 gunicorn -y
+    && apt-get install -y python3.7 gunicorn
 
 
 # Install our requirements.
