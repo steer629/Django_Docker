@@ -13,7 +13,7 @@ RUN apt-get update \
     && apt-get install -y python3.7 gunicorn python3-pip 
 
 RUN touch ~/.bash_aliases \
-    && echo "alias python=python3 >> ~/.bash_aliases
+    && echo "alias python=python3" >> ~/.bash_aliases
 
 COPY requirement.txt .
 
