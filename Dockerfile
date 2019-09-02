@@ -1,4 +1,4 @@
-From buildpack-deps:buster
+From ubuntu
 
 # ensure local python is preferred over distribution python
 ENV PATH /usr/local/bin:$PATH
@@ -20,6 +20,10 @@ COPY requirement.txt .
 # Install our requirements.
 RUN pip3 install -U pip \
     && pip3 install -Ur requirement.txt
+
+CMD /bin/bash
+
+
 
 
 
