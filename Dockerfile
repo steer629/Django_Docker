@@ -12,8 +12,8 @@ RUN apt-get update \
     && add-apt-repository ppa:deadsnakes/ppa -y \
     && apt-get install -y python3.7 gunicorn python3-pip 
 
-RUN touch ~/.bash_aliases \
-    && echo "alias python=python3" >> ~/.bash_aliases
+#touch ~/.bash_aliases &&\
+RUN echo "alias python=python3" >> ~/.bashrc
 
 COPY requirement.txt .
 
