@@ -18,7 +18,7 @@ RUN echo "alias python=python3" >> ~/.bashrc
 COPY requirement.txt .
 
 # Install our requirements.
-RUN pip3 install --upgrade pip \
+RUN pip3 install --upgrade pip3 \
     && pip3 install -Ur requirement.txt
 
 
