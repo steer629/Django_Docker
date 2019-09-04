@@ -9,3 +9,4 @@ flask-caching
 django_plotly_dash
 gunicorn
 redis
+plydata
