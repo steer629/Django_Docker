@@ -10,3 +10,4 @@ django_plotly_dash
 gunicorn
 redis
 plydata
+django-bootstrap4
