@@ -10,7 +10,7 @@ ENV LANG C.UTF-8
 RUN apt-get update \
     && apt-get install software-properties-common -y\
     && add-apt-repository ppa:deadsnakes/ppa -y \
-    && apt-get install -y python3.7 gunicorn python3-pip python3-psycopg2 mdbtools
+    && apt-get install -y python3.7 gunicorn python3-pip python3-psycopg2 mdbtools nano
 
 #touch ~/.bash_aliases &&\
 RUN echo "alias python=python3" >> ~/.bashrc \
