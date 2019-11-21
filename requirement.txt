@@ -8,4 +8,4 @@ redis
 plydata
 django-bootstrap4
 django-filter
-MySQL-python
+cx_Oracle
