@@ -9,3 +9,5 @@ plydata
 django-bootstrap4
 django-filter
 cx_Oracle
+djangorestframework
+django-filter
