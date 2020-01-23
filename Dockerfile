@@ -27,6 +27,18 @@ COPY requirement.txt .
 # Install our requirements.
 RUN pip3 install -Ur requirement.txt
 
+#install node
+RUN curl -sL https://deb.nodesource.com/setup_13.x | sudo -E bash -
+RUN apt-get install -y nodejs
+
+#install vue and vue-cli
+RUN npm install vue
+RUN npm install -g @vue/cli
+
+
+
+
+
 
 
 
