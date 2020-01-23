@@ -10,7 +10,7 @@ ENV LANG C.UTF-8
 RUN apt-get update \
     && apt-get install software-properties-common -y\
     && add-apt-repository ppa:deadsnakes/ppa -y \
-    && apt-get install -y python3.7 python3-dev python3-pip python3-psycopg2 mdbtools nano default-libmysqlclient-dev curl\
+    && apt-get install -y python3.7 python3-dev python3-pip python3-psycopg2 mdbtools nano default-libmysqlclient-dev curl sudo\
 #add for remote vs
     && apt-get install -y git iproute2 procps lsb-release apt-utils dialog 2>&1 \
 #clean up 
@@ -32,7 +32,7 @@ RUN curl -sL https://deb.nodesource.com/setup_13.x | sudo -E bash -
 RUN apt-get install -y nodejs
 
 #install vue and vue-cli
-RUN npm install vue
+RUN npm install vue bootstrap-vue bootstrap axios
 RUN npm install -g @vue/cli
 
 
