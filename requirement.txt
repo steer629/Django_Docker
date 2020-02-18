@@ -5,10 +5,10 @@ dash-bootstrap-components
 sqlalchemy
 pandas
 datetime
-flask-caching
 django_plotly_dash
 gunicorn
 redis
 plydata
 django-bootstrap4
 django-filter
+django-trix
