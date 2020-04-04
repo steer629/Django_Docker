@@ -13,3 +13,4 @@ django-bootstrap4
 django-filter
 django-trix
 djangorestframework-simplejwt
+cx-Oracle
