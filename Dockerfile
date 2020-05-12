@@ -19,7 +19,7 @@ RUN apt-get update \
     && apt-get clean -y \
     && rm -rf /var/lib/apt/lists/*
 #install oracle support
-RUN mkdir /opt/oracle && cd /opt/oracle
+RUN mkdir /opt/oracle && cd /opt/oracle \
     && wget https://download.oracle.com/otn_software/linux/instantclient/instantclient-basiclite-linuxx64.zip \
     && unzip instantclient-basiclite-linuxx64.zip \
     && rm -f instantclient-basiclite-linuxx64.zip \
