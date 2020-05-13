@@ -28,10 +28,12 @@ RUN mkdir /opt/oracle && cd /opt/oracle \
     && echo /opt/oracle/instantclient* > /etc/ld.so.conf.d/oracle-instantclient.conf \
     && ldconfig
 
+COPY cyber-mdbtools_0.8.2-2_amd64.deb .
+RUN apt-get install cyber-mdbtools_0.8.2-2_amd64.deb
 
 #touch ~/.bash_aliases &&\
 RUN echo "alias python=python3" >> ~/.bashrc \
-    &&  alias python=python3
+    &&  alias python=pythonn
 
 COPY requirement.txt .
 
